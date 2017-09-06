@@ -26,7 +26,7 @@ namespace UnitTestProject1
                 Assert.AreEqual(param1 + param2 ,res,$"Concat should be : {param1 + param2}") ;
             else
             {
-                Assert.AreEqual(param1 + param2, res, $"Concat should be : {param1 + param2}c");
+                Assert.AreEqual(param1 + param2 + "c", res, $"Concat should be : {param1 + param2}c");
             }
         }
 
