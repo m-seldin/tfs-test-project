@@ -19,10 +19,10 @@ namespace UnitTestProject1
             var res = helperFunctions.MyConcat(param1, param2);
             
 
-            var shouldFail = TestContext?.Properties["shouldFail"];
+            var shouldFail = TestContext?.Properties["shouldFail"];            
             Trace.WriteLine($"Should fail ? {shouldFail ?? "null"}");
 
-            if (shouldFail!=null && bool.Parse(shouldFail.ToString()) )
+            if (bool.Parse(shouldFail?.ToString()))
                 Assert.AreEqual(param1 + param2 ,res,$"Concat should be : {param1 + param2}") ;
             else
             {
