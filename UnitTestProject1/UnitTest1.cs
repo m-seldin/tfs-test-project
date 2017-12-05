@@ -17,17 +17,10 @@ namespace UnitTestProject1
             var param1 = "a";
             var param2 = "b";
             var res = helperFunctions.MyConcat(param1, param2);
-            
 
-            var shouldFail = TestContext?.Properties["shouldFail"];            
-            Trace.WriteLine($"Should fail ? {shouldFail ?? "null"}");
+            Assert.AreEqual(param1 + param2, res, "Concat not working!");
 
-            if (bool.Parse(shouldFail?.ToString()))
-                Assert.AreEqual(param1 + param2 ,res,$"Concat should be : {param1 + param2}") ;
-            else
-            {
-                Assert.AreEqual(param1 + param2 + "c", res, $"Concat should be : {param1 + param2}c");
-            }
+
         }
         [TestMethod]
         public void TestPlus()
@@ -35,7 +28,7 @@ namespace UnitTestProject1
             var param1 = 1;
             var param2 = 2;
             var res = helperFunctions.MyPlus(param1, param2);
-            Assert.AreEqual(param1 + param2, res, $"Concat should be : {param1 + param2}");
+            Assert.AreEqual(param1 + param2, res, "ERROR!");
         }
     }
 }
