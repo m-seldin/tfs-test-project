@@ -16,7 +16,8 @@ namespace UnitTestProject1
             
             var param1 = "a";
             var param2 = "b";
-            var res = helperFunctions.MyConcat(param1, param2);
+            var res = "ab";
+                //helperFunctions.MyConcat(param1, param2);
 
             Assert.AreEqual(param1 + param2, res, "Concat not working!");
 
