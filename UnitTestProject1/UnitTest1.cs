@@ -30,5 +30,14 @@ namespace UnitTestProject1
             var res = helperFunctions.MyPlus(param1, param2);
             Assert.AreEqual(param1 + param2, res, "ERROR!");
         }
+
+        [TestMethod]
+        public void TestMinus()
+        {
+            var param1 = 1;
+            var param2 = 2;
+            var res = helperFunctions.MyPlus(param1, param2);
+            Assert.AreEqual(param2 - param1, res, "ERROR!");
+        }
     }
 }
