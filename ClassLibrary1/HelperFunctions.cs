@@ -18,7 +18,9 @@ namespace ToolsLibrary
             return a + b;
         }
 
-        public int MyMinus(int a, int b) => b - a;
-
+        public int MyMinus(int a, int b)
+        {
+            return b - a;
+        }
     }
 }
