@@ -15,11 +15,10 @@ namespace UnitTestProject1
         {
             
             var param1 = "a";
-            var param2 = "b";
+            var param2 = "bc";
             var res = helperFunctions.MyConcat(param1, param2);
 
             Assert.AreEqual(param1 + param2, res, "Concat not working!");
-
 
         }
         [TestMethod]
@@ -36,7 +35,7 @@ namespace UnitTestProject1
         {
             var param1 = 1;
             var param2 = 2;
-            var res = helperFunctions.MyPlus(param1, param2);
+            var res = helperFunctions.MyMinus(param1, param2);
             Assert.AreEqual(param2 - param1, res, "ERROR!");
         }
     }
