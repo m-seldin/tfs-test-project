@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ToolsLibrary;
-namespace UnitTestProject1
+namespace UnitTestProject
 {
     [TestClass]
     public class TestHelperLibrary
