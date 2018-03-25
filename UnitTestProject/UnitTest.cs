@@ -18,7 +18,7 @@ namespace UnitTestProject
             var param2 = "b";
             var res = helperFunctions.MyConcat(param1, param2);
 
-            Assert.AreEqual(param1 + param1 + "c", res, "Concat not working!Adding regression message!");
+            Assert.AreEqual(param1 + param1 + "c", res, "Concat not working!");
 
         }
         [TestMethod]
